@@ -1,0 +1,15 @@
+<%- include("partials/adminheader"); %>
+
+<div class="card-group mt-5">
+    <% rents.forEach(rent => { %>
+            <div class="card mx-4 border border-danger rounded" style="background-color: lightgrey;">
+                <div class="card-body d-flex flex-column justify-content-end">
+                    <h4 class="card-title"><%= rent.email %></h4>
+                    <p class="card-text">Rendszám: <strong><%= rent.lplate %></strong></p>
+                    <p class="card-text">Név: <strong><%= rent.fname %> <%= rent.lname %></strong></p>
+                    <p class="card-text">Kezdés: <strong><%= rent.startdate %></strong></p>
+                    <a href="rents/<%= rent.email %>" class="btn btn-primary">Kezelés</a>
+                </div>
+            </div>
+    <% }) %>
+</div>

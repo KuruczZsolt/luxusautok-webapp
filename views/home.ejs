@@ -1,0 +1,17 @@
+<%- include("partials/header"); %>
+
+<h1 class="text-center">Autóink</h1>
+
+<div class="card-deck">
+    <% cars.forEach(car => { %>
+            <div class="card mx-4 mb-4 border border-secondary rounded" style="background-color: lightgrey;">
+                <img class="card-img-top" src="<%= car.imageURL %>" alt="<%= car.type %>">
+                <div class="card-body d-flex flex-column justify-content-end">
+                    <h4 class="card-title"><%= car.brand %> <%= car.type %></h4>
+                    <p class="card-text"><%= car.rentprice %> Ft/ hó</p>
+                </div>
+            </div>
+    <% }) %> 
+</div>
+
+<%- include("partials/footer"); %>

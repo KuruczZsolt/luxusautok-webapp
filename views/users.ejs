@@ -1,0 +1,17 @@
+<%- include("partials/header"); %>
+
+<h1 class="text-center mt-2">Új felhasználó</h1>
+<form action="/users" method="post"> 
+    <div class="form-group mx-4">
+        <label for="username">Felhasználónév:</label>
+        <input type="text" class="form-control" name="username" id="username">
+    </div>
+    <div class="form-group mx-4">
+        <label for="userpassword">Jelszó:</label>
+        <input type="password" class="form-control" name="userpassword" id="userpassword">
+    </div>
+    <input class="btn btn-primary mx-4 mt-4" type="submit" value="Regisztráció">
+</form>
+<p class="ms-4 mt-2"><a href="/users/login">Bejelentkezés</a></p>
+
+<%- include("partials/footer"); %>
