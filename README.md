@@ -14,3 +14,12 @@ Az oldalon a bejelentkezés lehetőségre kattintva bejelentkezhet a felhsznál�
 
 A megjelenő oldal jobb alsó sarkában található piros "admin" linkre kattintva bejelentkezhet az admin felületre ahonnan a bérlések kezelhetőek.
 Az admin felület jelszava: teslaisbest
+
+
+### Eszközök
+
+MySQL - Adatbázis
+Node.js - API, Backend
+HTML, Javascript, Bootstrap - Frontend
+GitHub - Verziókezelés
+Messenger, Discord - Kommunikáció
